@@ -1,0 +1,7 @@
+starter-files/*
+fonts/zips/*
+node_modules/*
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
