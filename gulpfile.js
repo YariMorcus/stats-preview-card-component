@@ -7,7 +7,7 @@ const browserSync = require('browser-sync').create();
 function compiler() {
 
     // Locate the SCSS files
-    return gulp.src('./scss/**/*.scss')
+    return gulp.src('./sass/**/*.scss')
 
     // Compile SCSS to CSS
     .pipe(sass().on('error', sass.logError))
@@ -23,7 +23,7 @@ function compiler() {
     }))
 
     // Save the CSS
-    .pipe(gulp.dest('./css'))
+    .pipe(gulp.dest('./styles'))
 
     // Stream to all browser (doesn't reload the page)
     .pipe(browserSync.stream());
@@ -45,7 +45,7 @@ function watch() {
     })
 
     // Automatically compile SCSS to CSS
-    gulp.watch('./scss/**/*.scss', compiler);
+    gulp.watch('./sass/**/*.scss', compiler);
 
     // Watch for changes in .html or .js files, 
     // If change detected, reload page automatically
