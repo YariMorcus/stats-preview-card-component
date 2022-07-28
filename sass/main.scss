@@ -7,10 +7,23 @@
 RULES FOR THIS FILE
 
 • one file per @import;
-• one file per @import;
 • one @import per line;
 • no new line between two imports from the same folder;
 • a new line after the last import from a folder;
 • file extensions and leading underscores omitted.
 
 */
+
+/*------------------------------------------------------------------
+[Main Stylesheet]
+
+Imports all modules
+
+Project:    Stats preview card component
+Version:    1.0
+Assigned to:    Yari Morcus
+Primary use:    Portfolio project 
+-------------------------------------------------------------------*/
+
+// Import base/_index.scss module
+@use "base/" as b;
