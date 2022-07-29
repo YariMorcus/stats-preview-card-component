@@ -1,0 +1,6 @@
+// Import variables module
+@use "../abstracts/variables" as v;
+
+.stats-pr-card {
+    font-size: v.$font-size;
+}

@@ -25,5 +25,8 @@ Assigned to:    Yari Morcus
 Primary use:    Portfolio project 
 -------------------------------------------------------------------*/
 
-// Import base/_index.scss module
+// Import base/_index.scss entrypoint file
 @use "base" as b;
+
+// Import components/_index.scss entrypoint file
+@use "components" as c;

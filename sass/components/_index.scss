@@ -1,0 +1,4 @@
+/* Entrypoint file */
+
+// Forward the stats-pr-card file when _index.scss is @used
+@forward "stats-pr-card";
