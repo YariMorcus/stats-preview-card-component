@@ -1,0 +1,54 @@
+/*------------------------------------------------------------------
+[Table of contents]
+    1. Lexend Deca
+    2. Inter
+        2.1 Regular
+        2.2 Bold
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+1. Lexend Deca
+*/
+
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('../fonts/lexend-deca/lexend-deca-regular.woff2') format('woff2'),
+        url('../fonts/lexend-deca/lexend-deca-regular.woff') format('woff'),
+        url('../fonts/lexend-deca/lexend-deca-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*------------------------------------------------------------------
+2. Inter
+    2.1 Regular
+*/
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter/inter-regular.woff2') format('woff2'),
+        url('../fonts/inter/inter-regular.woff') format('woff'),
+        url('../fonts/inter/inter-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*------------------------------------------------------------------
+2. Inter
+    2.2 Bold
+*/
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter/inter-bold.woff2') format('woff2'),
+        url('../fonts/inter/inter-bold.woff') format('woff'),
+        url('../fonts/inter/inter-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+

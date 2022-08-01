@@ -1,0 +1,83 @@
+// Import variables module
+@use "../abstracts/variables" as v;
+
+.stats-pr-card {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    width: 90vw;
+    color: v.$white;
+    border-bottom-left-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    background-color: v.$dark-desaturated-blue;
+
+    &__header-image {
+        height: 20rem;
+        background-image: linear-gradient(hsla(265, 78%, 25%, 0.5), hsla(265, 78%, 25%, 0.5)), url('../img/image-header-mobile.jpg');
+        background-size: cover;
+        border-top-left-radius: 1.2rem;
+        border-top-right-radius: 1.2rem;
+    }
+
+    &__img {
+        border-top-left-radius: 1.2rem;
+        border-top-right-radius: 1.2rem;
+    }
+
+    &__section {
+        padding: 4rem 2rem;
+    }
+
+    &__title {
+        margin-bottom: 1.5rem;
+        font-family: "Lexend Deca", sans-serif;
+        font-size: 3rem;
+        line-height: 1.2;
+        
+        &--center {
+            text-align: center;
+        }
+    }
+
+    &__content {
+        margin-bottom: 3rem;
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+        font-size: v.$font-size;
+        color: v.$slightly-transparent-white-75;
+        line-height: 1.8;
+
+        &--center {
+            text-align: center;
+        }
+    }
+
+    &__statistics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2rem;
+        
+        &:not(:last-child) {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__metric {
+        font-family: "Inter", sans-serif;
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: v.$white;
+    }
+
+    &__metric-plus {
+        position: relative;
+        top: 1px;
+    }
+
+    &__dimension {
+        font-size: 1.2rem;
+        color: v.$slightly-transparent-white-60;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}

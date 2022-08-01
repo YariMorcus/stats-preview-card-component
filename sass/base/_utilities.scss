@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as v;
+
+.text-accent {
+    color: v.$soft-violet;
+}
+
+.inter-normal {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;  
+}

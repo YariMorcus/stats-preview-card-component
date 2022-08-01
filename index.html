@@ -1,16 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="A stats preview card component made by Yari Morcus. A challenge from Frontend Mentor">
+  <meta name="keywords" content="frontendmentor frontend yarimorcus yari morcus coding challenge stats preview card component">
+  <meta name="author" content="Yari Morcus">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon-32x32.png" sizes="32x32" type="image/x-icon">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/main.css">
   
-  <title>Page title</title>
+  <title>Stats preview card component | Frontend Mentor</title>
 </head>
 <body>
 
+  <main>
+
+    <article class="stats-pr-card">
+
+      <header>
+        <div class="stats-pr-card__header-image"></div>
+      </header>
+
+      <section class="stats-pr-card__section">
+        <h1 class="stats-pr-card__title stats-pr-card__title--center">Get <span class="text-accent">insights</span> that help your business grow.</h1>
+        <p class="stats-pr-card__content stats-pr-card__content--center inter-normal">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+          experience, and overall efficiency.</p>
+        <div>
+          <div class="stats-pr-card__statistics">
+            <span class="stats-pr-card__metric">10k<span class="stats-pr-card__metric-plus">+</span></span>
+            <span class="stats-pr-card__dimension inter-normal">companies</span>
+          </div>
+          <div class="stats-pr-card__statistics">
+            <span class="stats-pr-card__metric">314</span>
+            <span class="stats-pr-card__dimension inter-normal">templates</span>
+          </div>
+          <div class="stats-pr-card__statistics">
+            <span class="stats-pr-card__metric">12M<span class="stats-pr-card__metric-plus">+</span></span>
+            <span class="stats-pr-card__dimension inter-normal">queries</span>
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <footer class="footer">
+    Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded&nbsp;by&nbsp;<a class="footer__link" href="https://www.linkedin.com/in/yarimorcus" target="_blank">Yari&nbsp;Morcus</a>.
+  </footer> <!-- .footer -->
 </body>
 </html>
