@@ -5,3 +5,6 @@
 
 // Forward the base file when _index.scss is @used
 @forward "base";
+
+// Forward the utilities file when _index.scss is @used
+@forward "utilities";

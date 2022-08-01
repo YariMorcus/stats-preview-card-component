@@ -1,0 +1,5 @@
+@use "../abstracts/variables" as v;
+
+.text-accent {
+    color: v.$soft-violet;
+}
