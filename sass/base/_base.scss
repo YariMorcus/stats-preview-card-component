@@ -1,6 +1,12 @@
+@use "../abstracts/variables" as v;
+
 /* Set core root defaults */
-html:focus-within {
-    scroll-behavior: smooth;
+html {
+    font-size: 10px;
+    
+    &:focus-within {
+        scroll-behavior: smooth;
+    }
 }
 
 /* Set core body defaults */
@@ -8,6 +14,15 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    background-color: v.$very-dark-blue;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    flex-grow: 1;
 }
 
 /* A elements that don't have a class get default styles */
