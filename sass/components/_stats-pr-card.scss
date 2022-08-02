@@ -1,14 +1,39 @@
 // Import variables module
 @use "../abstracts/variables" as v;
 
+// Import media query
+@use "../abstracts/mixins" as m;
+
 .stats-pr-card {
     margin-top: 6rem;
     margin-bottom: 6rem;
     width: 90vw;
+    max-width: 33.8rem;
     color: v.$white;
     border-bottom-left-radius: 1.2rem;
     border-bottom-right-radius: 1.2rem;
     background-color: v.$dark-desaturated-blue;
+
+    @include m.min-width-768px() {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 70rem;
+        border-radius: 1.2rem; 
+    }
+
+    @include m.min-width-978px() {
+        max-width: 90rem;
+    }
+
+    @include m.min-width-1078px() {
+        max-width: 120rem;
+    }
+
+    &__header {
+        @include m.min-width-768px() {
+            order: 1;
+        }
+    }
 
     &__header-image {
         height: 20rem;
@@ -16,6 +41,13 @@
         background-size: cover;
         border-top-left-radius: 1.2rem;
         border-top-right-radius: 1.2rem;
+
+        @include m.min-width-768px() {
+            height: 100%;
+            background-position: center;
+            border-top-left-radius: initial;
+            border-bottom-right-radius: 1.2rem;
+        }
     }
 
     &__img {
@@ -25,6 +57,14 @@
 
     &__section {
         padding: 4rem 2rem;
+
+        @include m.min-width-978px() {
+            padding: 4rem 5rem;
+        }
+
+        @include m.min-width-1078px() {
+            padding: 9rem 8rem 8rem;
+        }
     }
 
     &__title {
@@ -32,9 +72,9 @@
         font-family: "Lexend Deca", sans-serif;
         font-size: 3rem;
         line-height: 1.2;
-        
-        &--center {
-            text-align: center;
+
+        @include m.min-width-1078px() {
+            font-size: 4rem;
         }
     }
 
@@ -46,19 +86,45 @@
         color: v.$slightly-transparent-white-75;
         line-height: 1.8;
 
-        &--center {
-            text-align: center;
+        @include m.min-width-768px() {
+            width: 30rem;
+        }
+
+        @include m.min-width-978px() {
+            margin-bottom: 6rem;
+            padding-right: initial;
+            padding-left: initial;
+            width: 38rem;
         }
     }
 
-    &__statistics {
+    &__stats-container {
+        @include m.min-width-978px() {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &__stats {
         display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 2rem;
+
+        @include m.min-width-1078px() {
+            align-items: flex-start;
+
+            &:not(:first-child) {
+                padding-left: 1.5rem;
+            }
+        }
         
         &:not(:last-child) {
             margin-bottom: 2.5rem;
+
+            @include m.min-width-1078px() {
+                margin-bottom: initial;
+            }
         }
     }
 
@@ -78,6 +144,5 @@
         font-size: 1.2rem;
         color: v.$slightly-transparent-white-60;
         text-transform: uppercase;
-        letter-spacing: 1px;
     }
 }

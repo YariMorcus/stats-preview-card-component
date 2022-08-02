@@ -1,4 +1,8 @@
+// Import variables module
 @use "../abstracts/variables" as v;
+
+// Import media query
+@use "../abstracts/mixins" as m;
 
 .text-accent {
     color: v.$soft-violet;
@@ -7,4 +11,18 @@
 .inter-normal {
     font-family: "Inter", sans-serif;
     font-weight: 400;  
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-lg-left {
+    @include m.min-width-978px() {
+        text-align: left;
+    }
+}
+
+.letter-spacing-1px {
+    letter-spacing: 1px;
 }
