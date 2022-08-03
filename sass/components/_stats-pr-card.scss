@@ -59,7 +59,7 @@
         padding: 4rem 2rem;
 
         @include m.min-width-978px() {
-            padding: 4rem 5rem;
+            padding: 5rem;
         }
 
         @include m.min-width-1078px() {
@@ -95,7 +95,6 @@
             margin-bottom: 6rem;
             padding-right: initial;
             padding-left: initial;
-            width: 38rem;
         }
     }
 
