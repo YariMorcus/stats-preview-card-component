@@ -74,6 +74,7 @@
         line-height: 1.2;
 
         @include m.min-width-1078px() {
+            margin-bottom: 2.5rem;
             font-size: 4rem;
         }
     }
