@@ -87,14 +87,14 @@
         color: v.$slightly-transparent-white-75;
         line-height: 1.8;
 
-        @include m.min-width-768px() {
-            width: 30rem;
-        }
-
         @include m.min-width-978px() {
             margin-bottom: 6rem;
             padding-right: initial;
             padding-left: initial;
+        }
+
+        @include m.min-width-1289px() {
+            width: 38rem;
         }
     }
 
