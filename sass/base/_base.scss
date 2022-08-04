@@ -25,6 +25,29 @@ main {
     flex-grow: 1;
 }
 
+a {
+    outline: none;
+    text-decoration: none;
+    border-bottom: 1px solid;
+
+    &:visited {
+        color: v.$visited-color-link-state;
+    }
+
+    &:focus {
+        outline: 1px solid v.$white;
+    }
+    
+    &:hover {
+        color: hsl(277deg,64%,81%);
+    }
+
+    &:active {
+        color: v.$white;
+        background-color: v.$active-color-link-state;
+    }
+}
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
     text-decoration-skip-ink: auto;

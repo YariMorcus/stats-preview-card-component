@@ -30,3 +30,6 @@ Primary use:    Portfolio project
 
 // Import components/_index.scss entrypoint file
 @use "components" as c;
+
+// Import layout/_index.scss entrypoint file
+@use "layout" as l;

@@ -1,0 +1,15 @@
+// Import variables module
+@use "../abstracts/variables" as v;
+
+.footer {
+    padding: 0 1.28rem 1.28rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: center;
+    color: v.$white;
+
+    &__link {
+        color: v.$white;
+    }
+}
