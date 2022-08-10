@@ -10,43 +10,35 @@
     width: 90vw;
     max-width: 33.8rem;
     color: v.$white;
-    border-bottom-left-radius: 1.2rem;
-    border-bottom-right-radius: 1.2rem;
-    background-color: v.$dark-desaturated-blue;
+    border-radius: 1.2rem;
+    background-color: v.$soft-violet;
+    overflow: hidden;
 
     @include m.min-width-768px() {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         max-width: 70rem;
-        border-radius: 1.2rem; 
     }
 
     @include m.min-width-978px() {
         max-width: 90rem;
     }
 
-    @include m.min-width-1078px() {
-        max-width: 120rem;
+    @include m.min-width-1289px() {
+        max-width: 118rem;
     }
 
     &__header {
+        display: flex;
+
         @include m.min-width-768px() {
             order: 1;
         }
-    }
 
-    &__header-image {
-        height: 25rem;
-        background-image: linear-gradient(hsl(277, 90%, 25%, .61),hsl(277, 90%, 25%, .61)),url(../img/image-header-mobile.jpg);
-        background-size: cover;
-        border-top-left-radius: 1.2rem;
-        border-top-right-radius: 1.2rem;
-
-        @include m.min-width-768px() {
-            height: 100%;
-            background-position: center;
-            border-top-left-radius: initial;
-            border-bottom-right-radius: 1.2rem;
+        &-image {
+            mix-blend-mode: multiply;
+            opacity: 0.8;
+            object-fit: cover;
         }
     }
 
@@ -57,12 +49,13 @@
 
     &__section {
         padding: 4rem 2rem;
+        background-color: v.$dark-desaturated-blue;
 
         @include m.min-width-978px() {
             padding: 5rem;
         }
 
-        @include m.min-width-1078px() {
+        @include m.min-width-1289px() {
             padding: 9rem 8rem 8rem;
         }
     }
@@ -115,7 +108,7 @@
             align-items: flex-start;
 
             &:not(:first-child) {
-                padding-left: 1.5rem;
+                padding-left: 1.6rem;
             }
         }
         
